@@ -61,10 +61,10 @@ public static class StringBuilderEx
         new(builder, RegionName, Ident, FreeLineOffset);
 
     public static StringBuilder AddProperty(this StringBuilder source, string Type, string FieldName, string PropertyName) => source
-        .Ident().Append("public {0} {1}", Type, PropertyName).LN()
+        .Ident().Append("public ").Append(Type).Append(' ').Append(PropertyName).LN()
         .Ident().Append("{").LN()
-        .Ident(2).Append("get => {0};", FieldName).LN()
-        .Ident(2).Append("set => {0} = value;", FieldName).LN()
+        .Ident(2).Append("get => ").Append(FieldName).Append(';').LN()
+        .Ident(2).Append("set => ").Append(FieldName).Append(" = value;").LN()
         .Ident().Append("}").LN();
 
     public static StringBuilder AddNotifyProperty(
@@ -81,9 +81,9 @@ public static class StringBuilderEx
                 source.Ident();
             source.Append(Comment.TrimEnd()).LN();
         }
-        source.Ident().Append("public {0} {1}", Type, PropertyName).LN();
+        source.Ident().Append("public ").Append(Type).Append(' ').Append(PropertyName).LN();
         source.Ident().Append('{').LN();
-        source.Ident(2).Append("get => {0};", FieldName).LN();
+        source.Ident(2).Append("get => ").Append(FieldName).Append(';').LN();
 
         if (GenerateEvent)
         {
