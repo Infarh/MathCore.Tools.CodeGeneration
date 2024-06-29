@@ -8,4 +8,33 @@
     <LangVersion>preview</LangVersion>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <Version>0.0.0.0</Version>
+    <PackageReleaseNotes>
+      Старт проекта
+    </PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Copyright>shmachilin@yandex.ru</Copyright>
+    <Authors>Shmachilin P.A.</Authors>
+    <PackageProjectUrl>github.com/infarh/mathcore.tools.codegeneration</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/infarh/mathcore.tools.codegeneration.git</RepositoryUrl>
+    <Description>Библиотека инструментов для генерации текста исходного кода</Description>
+    <PackageTags>source;generation;src;dotnet;csharp</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>MathCoreSign.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Using Include="MathCore.Tools.CodeGeneration.Infrastructure" />
+  </ItemGroup>
+
 </Project>

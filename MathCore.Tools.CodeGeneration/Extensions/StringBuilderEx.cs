@@ -12,7 +12,7 @@ public static class StringBuilderEx
 
     public static string ToNumeratedLinesString(this StringBuilder builder) => builder.EnumLines(static (s, i) => $"{i + 1,3}|{s}").JoinStringLN();
 
-    public static StringBuilder Using(this StringBuilder builder, string NameSpace) => builder
+    public static StringBuilder UsingNamespace(this StringBuilder builder, string NameSpace) => builder
         .Append("using ")
         .Append(NameSpace)
         .AppendLine(";");
@@ -136,7 +136,9 @@ public static class StringBuilderEx
     }
 
     public static StringBuilder AppendDefault(this StringBuilder builder, string TypeName) => builder.Append("default(").Append(TypeName).Append(')');
+
     public static StringBuilder AppendNameOf(this StringBuilder builder, string TypeName) => builder.Append("nameof(").Append(TypeName).Append(')');
+
     public static StringBuilder AppendTypeOf(this StringBuilder builder, string TypeName) => builder.Append("typeof(").Append(TypeName).Append(')');
 
     public static StringBuilder Ident(this StringBuilder builder, int Level = 1, string Ident = "    ")

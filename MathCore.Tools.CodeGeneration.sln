@@ -2,13 +2,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCore.Tools.CodeGeneration", "MathCore.Tools.CodeGeneration\MathCore.Tools.CodeGeneration.csproj", "{073960D6-4C5F-4A89-B7D0-51D6F03C5D94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathCore.Tools.CodeGeneration", "MathCore.Tools.CodeGeneration\MathCore.Tools.CodeGeneration.csproj", "{073960D6-4C5F-4A89-B7D0-51D6F03C5D94}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C6F0C427-8B5B-4C50-9CD7-FEC51D6E04AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCore.Tools.CodeGeneration.ConsoleTests", "Tests\MathCore.Tools.CodeGeneration.ConsoleTests\MathCore.Tools.CodeGeneration.ConsoleTests.csproj", "{9CDA6D17-0D7F-40FF-80D3-FB86788AA3D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathCore.Tools.CodeGeneration.ConsoleTests", "Tests\MathCore.Tools.CodeGeneration.ConsoleTests\MathCore.Tools.CodeGeneration.ConsoleTests.csproj", "{9CDA6D17-0D7F-40FF-80D3-FB86788AA3D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCore.Tools.CodeGenerationTests", "Tests\MathCore.Tools.CodeGenerationTests\MathCore.Tools.CodeGenerationTests.csproj", "{9699A386-26A1-40BF-ABC4-6B944C910C0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathCore.Tools.CodeGenerationTests", "Tests\MathCore.Tools.CodeGenerationTests\MathCore.Tools.CodeGenerationTests.csproj", "{9699A386-26A1-40BF-ABC4-6B944C910C0F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{A05DC76D-A384-4B57-9DD7-003683C127BD}"
 	ProjectSection(SolutionItems) = preProject

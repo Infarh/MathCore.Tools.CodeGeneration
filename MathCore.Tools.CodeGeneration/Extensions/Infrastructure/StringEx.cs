@@ -1,4 +1,4 @@
-﻿namespace MathCore.Tools.CodeGeneration.Extensions;
+﻿namespace MathCore.Tools.CodeGeneration.Extensions.Infrastructure;
 
 public static class StringEx
 {
