@@ -1,0 +1,40 @@
+name: Testing
+
+on:
+  push:
+    branches: 
+    - '*'
+    paths-ignore: 
+    - '.github/workflows/**'
+    - '**.md'
+    - '**.docx'
+    - '**.bat'
+    - '**.vssettings'
+
+env:
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+  DOTNET_NOLOGO: true
+
+jobs:
+  test:
+    name: Test on .NET Core
+    runs-on: [ubuntu-latest]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Building
+        run: |
+          dotnet build MathCore
+          dotnet build Tests/MathCore.Tools.CodeGenerationTests
+
+      - name: Run Tests
+        run: dotnet test Tests/MathCore.Tools.CodeGenerationTests --no-build
