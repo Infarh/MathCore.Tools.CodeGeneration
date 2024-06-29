@@ -10,11 +10,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCore.Tools.CodeGenerati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCore.Tools.CodeGenerationTests", "Tests\MathCore.Tools.CodeGenerationTests\MathCore.Tools.CodeGenerationTests.csproj", "{9699A386-26A1-40BF-ABC4-6B944C910C0F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{A05DC76D-A384-4B57-9DD7-003683C127BD}"
+	ProjectSection(SolutionItems) = preProject
+		.github\dependabot.yml = .github\dependabot.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{94F8BBC8-01E9-4F5F-91F4-0AE65E910F1B}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\publish.yml = .github\workflows\publish.yml
+		.github\workflows\testing.yml = .github\workflows\testing.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7043BC69-3CE7-4604-9B6D-A8EC942FC094}
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{94F8BBC8-01E9-4F5F-91F4-0AE65E910F1B} = {A05DC76D-A384-4B57-9DD7-003683C127BD}
 		{9699A386-26A1-40BF-ABC4-6B944C910C0F} = {C6F0C427-8B5B-4C50-9CD7-FEC51D6E04AF}
 		{9CDA6D17-0D7F-40FF-80D3-FB86788AA3D8} = {C6F0C427-8B5B-4C50-9CD7-FEC51D6E04AF}
 	EndGlobalSection
