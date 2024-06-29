@@ -33,7 +33,7 @@ jobs:
 
       - name: Building
         run: |
-          dotnet build MathCore
+          dotnet build MathCore.Tools.CodeGeneration
           dotnet build Tests/MathCore.Tools.CodeGenerationTests
 
       - name: Run Tests
