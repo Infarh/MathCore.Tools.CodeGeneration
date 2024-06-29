@@ -4,15 +4,33 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCore.Tools.CodeGeneration", "MathCore.Tools.CodeGeneration\MathCore.Tools.CodeGeneration.csproj", "{073960D6-4C5F-4A89-B7D0-51D6F03C5D94}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C6F0C427-8B5B-4C50-9CD7-FEC51D6E04AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCore.Tools.CodeGeneration.ConsoleTests", "Tests\MathCore.Tools.CodeGeneration.ConsoleTests\MathCore.Tools.CodeGeneration.ConsoleTests.csproj", "{9CDA6D17-0D7F-40FF-80D3-FB86788AA3D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCore.Tools.CodeGenerationTests", "Tests\MathCore.Tools.CodeGenerationTests\MathCore.Tools.CodeGenerationTests.csproj", "{9699A386-26A1-40BF-ABC4-6B944C910C0F}"
+EndProject
 Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7043BC69-3CE7-4604-9B6D-A8EC942FC094}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9699A386-26A1-40BF-ABC4-6B944C910C0F} = {C6F0C427-8B5B-4C50-9CD7-FEC51D6E04AF}
+		{9CDA6D17-0D7F-40FF-80D3-FB86788AA3D8} = {C6F0C427-8B5B-4C50-9CD7-FEC51D6E04AF}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{073960D6-4C5F-4A89-B7D0-51D6F03C5D94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{073960D6-4C5F-4A89-B7D0-51D6F03C5D94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{073960D6-4C5F-4A89-B7D0-51D6F03C5D94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{073960D6-4C5F-4A89-B7D0-51D6F03C5D94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9699A386-26A1-40BF-ABC4-6B944C910C0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9699A386-26A1-40BF-ABC4-6B944C910C0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9699A386-26A1-40BF-ABC4-6B944C910C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9699A386-26A1-40BF-ABC4-6B944C910C0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CDA6D17-0D7F-40FF-80D3-FB86788AA3D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CDA6D17-0D7F-40FF-80D3-FB86788AA3D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CDA6D17-0D7F-40FF-80D3-FB86788AA3D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CDA6D17-0D7F-40FF-80D3-FB86788AA3D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
